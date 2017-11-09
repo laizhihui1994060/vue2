@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SpriteFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CssFileName="../images" ImageName="img" IsPhone="false" SpriteImgFileType="Png" xmlns="CssSprite">
+  <SpriteList>
+    <Sprite Path="parking.png" LocationX="0" LocationY="0" />
+    <Sprite Path="staff.png" LocationX="0" LocationY="28" />
+    <Sprite Path="destinaton.png" LocationX="0" LocationY="56" />
+    <Sprite Path="parkinglot.png" LocationX="0" LocationY="84" />
+    <Sprite Path="rescueArea.png" LocationX="0" LocationY="120" />
+    <Sprite Path="destinationArea.png" LocationX="0" LocationY="156" />
+    <Sprite Path="UNLOADING.png" LocationX="0" LocationY="192" />
+    <Sprite Path="RSA_WORKING.png" LocationX="0" LocationY="228" />
+    <Sprite Path="RSA_DONE.png" LocationX="0" LocationY="264" />
+    <Sprite Path="offLine.png" LocationX="0" LocationY="300" />
+    <Sprite Path="DESTINATION.png" LocationX="0" LocationY="324" />
+    <Sprite Path="ARRIVED_AT_INCIDENT_LOCATION.png" LocationX="0" LocationY="360" />
+    <Sprite Path="ACCEPTED.png" LocationX="0" LocationY="396" />
+    <Sprite Path="DRIVING_TO_INCIDENT_LOCATION.png" LocationX="0" LocationY="432" />
+    <Sprite Path="GOTO_DESTINATION.png" LocationX="0" LocationY="468" />
+    <Sprite Path="FREE.png" LocationX="0" LocationY="504" />
+    <Sprite Path="FINISH_UNLOADING.png" LocationX="0" LocationY="528" />
+  </SpriteList>
+</SpriteFile>

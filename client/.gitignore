@@ -1,0 +1,9 @@
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+public/
+test/e2e/reports
+selenium-debug.log
+views/
+logs/

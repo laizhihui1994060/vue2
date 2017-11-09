@@ -1,0 +1,860 @@
+html, body, #app {
+    height: 100%;
+    font-family:"Open Sans",arial,x-locale-body,sans-serif;
+}
+table p{
+    margin: 0;
+}
+.btn, button, .radius-btn{
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 14px  !important;
+    height: auto;
+    padding:6px 12px;
+    display: inline-block;
+}
+.radius-btn{
+    min-width: 100px;
+    border:1px solid  rgb(23, 134, 247);
+    color:rgb(23, 134, 247);    
+}
+body {
+    min-width: 1004px;
+    min-height: 600px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body ul,body ol{
+    margin: 0;
+}
+a,a:visited,a:active,a:hover{
+    text-decoration: none !important;
+}
+/*弹出框居中*/
+body .modal-dialog{
+    margin-top: 140px; 
+}
+
+.tooltip.left .tooltip-arrow{
+    border-left-color: #555 !important;
+}
+.tooltip-inner{
+    background-color: #555 !important;
+}
+.tooltip.left{
+     top: 10px !important; 
+}
+
+.currentCall #animete{
+    position: relative;
+    margin-left: 7px;
+    overflow: hidden;
+    display: inline-block;
+    animation:mymove 1s infinite;
+}
+.currentCall label{
+    margin:0;
+    font-size: 12px;
+}
+.currentCall img{
+    vertical-align:bottom;
+}
+.currentCall button{
+    padding: 4px;
+}
+.currentCall .guding {
+    display: inline-block;
+    width: 40px;
+    margin-right: 18px;
+    
+}
+
+@keyframes mymove
+{
+    from {width:0px;}
+    to {width:40px;}
+}
+
+
+article{
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 36px;
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+article:after{
+    content:'';
+    height:1px;
+    display:block;
+    background-color:#e0e0e0;
+    position:relative;
+
+    left:70px;
+    top:-10px;
+}
+.tooltip-inner{
+    text-align: left !important;
+}
+select {
+      /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+    border: solid 1px #eee;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .1);
+      /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+      /*在选择框的最右侧中间显示小箭头图片*/
+    background: url('../../src/assets/img.png') no-repeat scroll 95% -33px transparent;
+      /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    height: 34px;
+    padding-left: 5px;
+    outline: none;
+    width: auto;
+}
+
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand { 
+    display: none; 
+}
+
+li {
+    list-style: none;
+}
+.container-fluid{
+    padding: 0 !important;
+}
+ .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn.active.focus {
+        outline-width: 0;
+}
+body .modal-header,body .modal-footer{
+    padding: 24px;
+    border-width: 0;
+}
+.modal-title{
+    font-weight: normal;
+}
+body .modal-body{
+    padding-top: 0px;
+}
+body .modal-content{
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba(28, 128, 164, 0.4);
+}
+body .table-responsive{
+    overflow-x: inherit;
+}
+.resetPadding{
+    padding: 0;
+}
+body label{
+    line-height: 14px;
+    font-weight: normal;
+    color: rgb(102, 102, 102);
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.return{
+    font-size: 12px;
+    text-align: center;
+    background: #fff;
+    display: inline-block;
+    padding: 6px 12px;
+    line-height: 12px;
+}
+
+.btns{
+    text-align: center;
+}
+.dispatch{
+    background-color: #1785f7;
+    border-width: 0;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 0;
+    flex:1;
+    border-bottom: 1px solid  rgba(22, 131, 243, 0.27);
+    margin-bottom: 10px;
+    
+}
+.btns button, .btn-bock{
+    font-size: 12px;
+    color: rgb(23, 134, 247);
+    
+    border: 1px solid rgb(23, 134, 247);
+    text-align: center;
+    background: #fff;
+    display: inline-block;
+    line-height: 12px;
+}
+.btn-group {
+    padding-right: 24px;
+}
+.btn-group button{
+    border-width: 0;
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 0px;
+    line-height: 12px;
+}
+.btn-group button:nth-child(1){
+    background-color:#e7f2fe;
+
+}
+.amap-sug-result{
+    z-index: 8888;
+}
+
+.btn-group .dropdown-toggle{
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+
+}
+.btn-group .dropdown-toggle span{
+    color: #000
+}
+
+/*由内联样式修改为添加class以便随时覆盖*/
+.btn-group button.verificationInput,input.label-text.verificationInput{
+    border:1px solid #f9bcbc;
+}
+.glyphicon.glyphicon-remove.close{
+    opacity: 0.8;
+}
+.form-group .dropdown-menu input{
+     
+    /*box-shadow: 0 0 10px rgba(0, 204, 204, .3);*/
+    border-width: 0;
+    border-bottom: 1px solid rgba(0, 204, 204, .3);
+    font-size: 14px;
+}
+body .dropdown-menu > li > a{
+    padding: 3px 5px ;
+}
+body .dropdown-menu{
+    border: 1px solid #1786f7;
+    padding-top: 0;
+    max-height: 215px;
+    overflow-x: hidden;
+    max-width: auto;
+    min-width: auto;
+    padding: 0
+}
+#orderScheduleTime .dropdown-menu,
+#startEndTime .dropdown-menu{
+    max-height: initial;
+    border:  1px solid rgba(22, 131, 243, 0.27);
+    padding: initial;
+    overflow-x: initial; 
+    max-width: auto;
+} 
+.amap-marker{
+    position: absolute;
+}
+.map_close span{
+    font-size: 18px;
+    color: #fff;
+}
+
+.amap-marker-label {
+    position: absolute;
+    font-weight: bold;
+    cursor: pointer;
+    border:none !important;
+    background: transparent;
+    top: 36px !important;
+    text-align: center;
+    left: 50% !important;
+    margin-left: -90px;
+    width: 200px;
+}
+.labelStyle{
+    background: #000;
+    display: inline-block;
+    color: #fff;
+    padding: 2px;
+}
+.accidentTo {
+    border-width: 0;
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+    background: #1786f7;
+}
+
+.accidentTo:focus{
+    color: #fff
+}
+.amap-info-content {
+    font-size: 12px !important;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    margin: 0;
+}
+
+.searchConditions button, .exportConditions button {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 5px 24px;
+}
+.searchConditions button {
+    color: #FFFFFF;
+    border: 1px solid #1786f7 !important;
+}
+.exportConditions button {
+    color: #333333 !important;
+    background-color: #F6F6F6 !important;
+    border: 1px solid #1786f7 !important;
+}
+.right_content {
+    margin-top: 25px;
+    padding-bottom: 40px;
+    position: relative;
+    min-height: 760px;
+ }
+
+.right_content .resetPadding {
+    padding-left: 0;
+    padding-right: 0;
+}
+.right_content .setWidth {
+    width: 74px;
+}
+
+.right_content #saveServer button {
+    background: #F6F6F6;
+    border: 1px solid #39B6E5;
+    font-size: 23px;
+    padding: 0;
+    text-align: center;
+    line-height: 22px;
+    width: 96px;
+    font-size: 12px;
+    color: #333333;
+}
+
+.right_content .table_box table {
+    box-sizing: border-box;
+}
+.right_content .table_box .dropdown-menu {
+    min-width: 100px
+;}
+.right_content .table_box .dropdown-menu  a{
+    text-align: center;
+}
+.right_content .table_box .btn,.toggleView .btn,.sace_filter {
+    /*border: 1px solid #39B6E5;*/
+    border: 1px solid rgb(23, 134, 247);
+    /*color: #999;*/
+    color: rgb(23, 134, 247);
+    line-height: 11px;
+    text-align: center;
+    background-color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+}
+.toggleView .btn{
+    margin-left: 24px;
+}
+#vueTable .right_content .toggleView .caret{
+    margin: 0 !important;
+}
+body .caret{
+    border-top: 6px dashed;
+}
+.right_content .table_box .caret {
+    color: #39B6E5;
+    margin-left: 2px;
+}
+.right_content >.table_box > .table > thead > tr > th{
+    box-sizing: border-box;
+    color:#999999;  
+}
+.right_content >.table_box > .table > thead{
+    background-color: #f3f7f9;
+}
+
+.right_content >.table_box > .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
+    vertical-align: middle !important;
+    border:1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.right_content .table_box tbody tr {
+    background: #fff;
+    box-sizing: border-box; 
+}
+.right_content .table_box tbody tr:nth-child(even){
+    background-color: #f3f7f9;
+}
+
+.right_content .table_box tr .setWidth {
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+.right_content .table_box tbody tr span {
+    display: inline-block;
+    font-size: 12px;
+}
+
+
+.right_content .table_box  tbody tr:nth-child(odd):hover {
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.right_content .detail-view {
+    background: #f6f6f6 !important;
+    height: auto !important;
+}
+.right_content .detail-view td {
+    padding-bottom: 4px;
+}
+.right_content .detail-view .order_rwap {
+    background-color: #fff;
+    text-align: left;
+    padding-bottom: 0;
+    margin: 2px 0;
+    transition: all .2s;
+    height: 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+.right_content dt {
+    display: inline-block
+}
+.right_content dl {
+    margin: 0;
+}
+.right_content .flex-item dt, .flex-item dd {
+    display: inline-block;
+    margin-left: 16px;
+    font-size: 12px;
+    color: #333333;
+    line-height: 12px;
+    margin-top: 12px;
+}
+.right_content .table_box > thead > tr > th{
+    border: none;
+}
+.right_content .toggleView .active{
+    /*color: #39B6E5*/
+    color: #1786f7;
+}
+.right_content .toggleView {
+    /*color: #39B6E5;*/
+    margin-bottom: 12px;
+    display: flex;
+}
+/* .right_content .toggleView a{
+    font-size: 12px;
+    display: inline-block;
+    color: #999999
+} */
+.right_content .toggleView span{
+    margin: 0 10px;
+}
+.right_content .toggleView .btn span{
+    margin: 0;
+}
+.right_content .inline{
+    display: inline-block;
+}
+.right_content .inline label{
+    margin-right: 6px !important;
+}
+.right_content .inline input,
+.right_content .inline label{
+    font-size: 12px;
+}
+.right_content .quick .label_value input{
+    margin-right: 20px;
+}
+/* .right_content .inline input{
+    padding: 4px 0;
+    margin-right: 20px;
+} */
+
+.inline-close{
+    background: #e4e0e0;
+    display: inline-block;
+    padding: 6px 18px;
+    font-size: 12px;
+    line-height: 12px;
+    position: relative;
+    margin: 0;
+    margin-right: 20px;
+}
+.inline-close[disabled]{
+    background: #DBDFE3 ;
+}
+.inline-close:hover i{
+    display: block;
+}
+.inline-close[disabled]:hover  i{
+    display: none;
+}
+.inline-close i{
+    background:url('../../src/assets/img.png') no-repeat 0 -170px;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    display: none;
+    cursor: pointer;
+}
+#map_content{
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+}
+#map_content > div:nth-of-type(1){
+    padding-top: 15px;
+}
+#map_content > div:last-child{
+    padding-bottom: 15px;
+}
+#map_content > div{
+    padding: 0 10px;
+}
+#map_content b{
+    font-weight: normal;
+    position: relative;
+    padding-left: 12px;
+    display: inline-block;
+}
+#map_content b:after{
+    content: '\25CF';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -10px;
+}
+#map_content .map_close{
+    position: absolute;
+    top: 3px;
+    right: 8px;
+}
+#map_content:after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 9px solid rgba(0,0,0,.5);
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -9px;
+}
+#map_content .map_click{
+    border-top: 1px solid rgba(22, 131, 243, 0.27);
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 10px;
+    display: flex;
+
+
+}
+#map_content .map_click a{
+    font-size: 12px;
+    line-height: 12px;
+    flex:1;
+    padding:10px 0;
+    border-radius: 4px;
+    display: block;
+}
+#map_content .map_click a:nth-child(2){
+    margin-left:20px;
+}
+#underSingle #locationMap{
+        display: flex !important;
+        flex-direction: column !important;
+        flex: 1 ;
+}
+
+
+.img{background:url(../../src/assets/img.png) no-repeat;}
+.sousuo{height:12px;width:6px;background-position:0 0;}
+.Rectangle%2012{height:8px;width:6px;background-position:0 -12px;}
+.bitian{height:7px;width:7px;background-position:0 -20px;}
+.up{height:6px;width:8px;background-position:0 -27px;}
+.down_two{height:6px;width:8px;background-position:0 -33px;}
+.down_one{height:6px;width:8px;background-position:0 -39px;}
+.down{height:6px;width:8px;background-position:0 -45px;}
+.down_three{height:6px;width:8px;background-position:0 -51px;}
+.网点{height:10px;width:8px;background-position:0 -57px;}
+.up_two{height:6px;width:8px;background-position:0 -67px;}
+.up_three{height:6px;width:8px;background-position:0 -73px;}
+.up_one{height:6px;width:8px;background-position:0 -79px;}
+.brn_select{height:7px;width:9px;background-position:0 -85px;}
+.checkbox{height:10px;width:10px;background-position:0 -92px;}
+.delete{height:12px;width:12px;background-position:0 -102px;}
+.hui_fanhui{height:12px;width:12px;background-position:0 -114px;}
+.Help{height:20px;width:12px;background-position:0 -126px;}
+.bianji{height:12px;width:12px;background-position:0 -146px;}
+.checkboxed{height:12px;width:12px;background-position:0 -158px;}
+.text_close{height:12px;width:12px;background-position:0 -170px;}
+.shouq{height:6px;width:12px;background-position:0 -182px;}
+.zhank{height:6px;width:12px;background-position:0 -188px;}
+.company_branch{height:13px;width:14px;background-position:0 -194px;}
+.Combined3{height:14px;width:14px;background-position:0 -207px;}
+.checkbox_disabled{height:14px;width:14px;background-position:0 -221px;}
+.checked{height:14px;width:14px;background-position:0 -235px;}
+.company{height:15px;width:14px;background-position:0 -249px;}
+.Combined2{height:14px;width:14px;background-position:0 -264px;}
+.iconfont-fanhui{height:12px;width:15px;background-position:0 -278px;}
+.remove{height:16px;width:16px;background-position:0 -290px;}
+.photo{height:20px;width:16px;background-position:0 -306px;}
+.mang{height:16px;width:16px;background-position:0 -326px;}
+.add{height:16px;width:16px;background-position:0 -342px;}
+.exit{height:16px;width:16px;background-position:0 -358px;}
+.addTool{height:16px;width:16px;background-position:0 -374px;}
+.checkbox_checked{height:14px;width:16px;background-position:0 -390px;}
+.checked_disabled{height:14px;width:16px;background-position:0 -404px;}
+.minGreyStar{height:15px;width:17px;background-position:0 -418px;}
+.minYellowStar{height:15px;width:17px;background-position:0 -433px;}
+.radio_check_disabled{height:18px;width:18px;background-position:0 -448px;}
+.radio_check{height:18px;width:18px;background-position:0 -466px;}
+.radioDiaabled{height:18px;width:18px;background-position:0 -484px;}
+.news{height:26px;width:18px;background-position:0 -502px;}
+.redphone{height:18px;width:18px;background-position:0 -528px;}
+.radio{height:18px;width:18px;background-position:0 -546px;}
+.off{height:8px;width:18px;background-position:0 -564px;}
+.no{height:12px;width:18px;background-position:0 -572px;}
+.PhoneBook{height:18px;width:18px;background-position:0 -584px;}
+.point{height:22px;width:18px;background-position:0 -602px;}
+.poin{height:22px;width:18px;background-position:0 -624px;}
+.downup{height:18px;width:18px;background-position:0 -646px;}
+.Shape{height:18px;width:18px;background-position:0 -664px;}
+.fill_radius{height:18px;width:18px;background-position:0 -682px;}
+.bluephone{height:18px;width:18px;background-position:0 -700px;}
+.set{height:18px;width:18px;background-position:0 -718px;}
+.order_static{height:20px;width:20px;background-position:0 -736px;}
+.Data_Today%20Copy%202{height:20px;width:20px;background-position:0 -756px;}
+.pause_No{height:22px;width:22px;background-position:0 -776px;}
+.Contacts{height:22px;width:22px;background-position:0 -798px;}
+.Hxingxing{height:20px;width:22px;background-position:0 -820px;}
+.dianhua{height:22px;width:22px;background-position:0 -840px;}
+.Uxingxing{height:20px;width:22px;background-position:0 -862px;}
+.Calling{height:22px;width:22px;background-position:0 -882px;}
+.right{height:20px;width:22px;background-position:0 -904px;}
+.Calendar{height:21px;width:24px;background-position:0 -924px;}
+.download{height:24px;width:24px;background-position:0 -945px;}
+.broadcast{height:24px;width:24px;background-position:0 -969px;}
+.t_hujiao{height:21px;width:24px;background-position:0 -993px;}
+.d_hujiao{height:21px;width:24px;background-position:0 -1014px;}
+.info{height:22px;width:24px;background-position:0 -1035px;}
+.hujiao{height:21px;width:24px;background-position:0 -1057px;}
+.ipone{height:21px;width:24px;background-position:0 -1078px;}
+.geren{height:22px;width:24px;background-position:0 -1099px;}
+.clientWeek{height:24px;width:26px;background-position:0 -1121px;}
+.orderWeek{height:24px;width:26px;background-position:0 -1145px;}
+.orderLine{height:24px;width:26px;background-position:0 -1169px;}
+.clientBar{height:24px;width:26px;background-position:0 -1193px;}
+.clientLine{height:24px;width:26px;background-position:0 -1217px;}
+.orderBar{height:24px;width:26px;background-position:0 -1241px;}
+.l_hujiao{height:24px;width:27px;background-position:0 -1265px;}
+.new_Calendar{height:24px;width:27px;background-position:0 -1289px;}
+.new_info{height:25px;width:27px;background-position:0 -1313px;}
+.Xtuoche1-1{height:28px;width:28px;background-position:0 -1338px;}
+.Xtuoche1-2{height:28px;width:28px;background-position:0 -1366px;}
+.Mtuoche-2{height:28px;width:28px;background-position:0 -1394px;}
+.Mtuoche-1{height:28px;width:28px;background-position:0 -1422px;}
+.Xtuoche1-3{height:28px;width:28px;background-position:0 -1450px;}
+.prev{height:20px;width:28px;background-position:0 -1478px;}
+.Mtuoche{height:28px;width:28px;background-position:0 -1498px;}
+.Xtuoche1-0{height:28px;width:28px;background-position:0 -1526px;}
+.Mtuoche-0{height:28px;width:28px;background-position:0 -1554px;}
+.Xtuoche1{height:28px;width:28px;background-position:0 -1582px;}
+.Mtuoche-6{height:28px;width:28px;background-position:0 -1610px;}
+.Mtuoche-7{height:28px;width:28px;background-position:0 -1638px;}
+.zhankai{height:20px;width:28px;background-position:0 -1666px;}
+.Mtuoche-3{height:28px;width:28px;background-position:0 -1686px;}
+.Mtuoche-4{height:28px;width:28px;background-position:0 -1714px;}
+.Mtuoche-5{height:28px;width:28px;background-position:0 -1742px;}
+.Xtuoche1-4{height:28px;width:28px;background-position:0 -1770px;}
+.Xtuoche1-6{height:28px;width:28px;background-position:0 -1798px;}
+.Xtuoche1-5{height:28px;width:28px;background-position:0 -1826px;}
+.next{height:20px;width:28px;background-position:0 -1854px;}
+.Xtuoche1-7{height:28px;width:28px;background-position:0 -1874px;}
+.Bar_chart{height:28px;width:30px;background-position:0 -1902px;}
+.Line_chart_week{height:28px;width:30px;background-position:0 -1930px;}
+.head{height:32px;width:32px;background-position:0 -1958px;}
+.pointLog{height:32px;width:32px;background-position:0 -1990px;}
+.logo_out{height:28px;width:36px;background-position:0 -2022px;}
+.tuoyun{height:30px;width:38px;background-position:0 -2050px;}
+.tuoche{height:30px;width:38px;background-position:0 -2080px;}
+.qianyin{height:28px;width:38px;background-position:0 -2110px;}
+.logo{height:29px;width:38px;background-position:0 -2138px;}
+.kuaixiu{height:38px;width:38px;background-position:0 -2167px;}
+.kunjin{height:36px;width:38px;background-position:0 -2205px;}
+.messga_special_left{height:52px;width:42px;background-position:0 -2241px;}
+.messga_special_right{height:52px;width:42px;background-position:0 -2293px;}
+.message_usual_left{height:52px;width:42px;background-position:0 -2345px;}
+.message_usual_right{height:52px;width:42px;background-position:0 -2397px;}
+.fastforward{height:48px;width:48px;background-position:0 -2449px;}
+.fastforward_gray{height:48px;width:48px;background-position:0 -2497px;}
+.refresh{height:48px;width:48px;background-position:0 -2545px;}
+.refresh_gray{height:48px;width:48px;background-position:0 -2593px;}
+.rewinddown_gray{height:48px;width:48px;background-position:0 -2641px;}
+.rewinddown{height:48px;width:48px;background-position:0 -2689px;}
+.Group{height:52px;width:52px;background-position:0 -2737px;}
+.paiche{height:67px;width:54px;background-position:0 -2789px;}
+.shouqi{height:67px;width:54px;background-position:0 -2856px;}
+.xiadan{height:67px;width:54px;background-position:0 -2923px;}
+.fuwushang{height:58px;width:58px;background-position:0 -2990px;}
+.siji{height:58px;width:58px;background-position:0 -3048px;}
+.success{height:58px;width:58px;background-position:0 -3106px;}
+.zant{height:74px;width:74px;background-position:0 -3164px;}
+.heard{height:128px;width:128px;background-position:0 -3238px;}
+.message_bg_left{height:209px;width:142px;background-position:0 -3366px;}
+.message_bg_right{height:209px;width:142px;background-position:0 -3575px;}
+.custom_configuration{height:180px;width:180px;background-position:0 -3784px;}
+.travel_management{height:180px;width:180px;background-position:0 -3964px;}
+.single_process{height:180px;width:180px;background-position:0 -4144px;}
+.dispatching_vehicle{height:180px;width:180px;background-position:0 -4324px;}
+.messga_box{height:41px;width:212px;background-position:0 -4504px;}
+.messga_box_usual_right{height:61px;width:234px;background-position:0 -4545px;}
+.messga_box_usual_left{height:61px;width:234px;background-position:0 -4606px;}
+.messga_box_speocal_right{height:61px;width:236px;background-position:0 -4667px;}
+.messga_box_speocal_left{height:61px;width:236px;background-position:0 -4728px;}
+.out_bg{height:430px;width:448px;background-position:0 -4789px;}
+.glyphicons-halflings{height:159px;width:469px;background-position:0 -5219px;}
+.glyphicons-halflings-white{height:159px;width:469px;background-position:0 -5378px;}
+.Path2{height:292px;width:1200px;background-position:0 -5537px;}
+.loginbody_bg{height:240px;width:1200px;background-position:0 -5829px;}
+
+
+
+
+.carStatus{background:url(../../src/assets/cars/carStatus.png) no-repeat;display: inline-block}
+.parking{height:28px;width:28px;background-position:0 0}
+.staff{height:28px;width:28px;background-position:0 -28px}
+.destinaton{height:28px;width:28px;background-position:0 -56px}
+.parkinglot{height:36px;width:30px;background-position:0 -84px}
+.rescueArea{height:36px;width:30px;background-position:0 -120px}
+.destinationArea{height:36px;width:30px;background-position:0 -156px}
+.UNLOADING{height:36px;width:36px;background-position:0 -192px;}
+.RSA_WORKING,.TRUCK_LOADING{height:36px;width:36px;background-position:0 -228px;}
+.RSA_DONE{height:36px;width:36px;background-position:0 -264px;}
+.offLine{height:24px;width:36px;background-position:0 -300px;}
+.DESTINATION{height:36px;width:36px;background-position:0 -324px;}
+.ARRIVED_AT_INCIDENT_LOCATION,.ARRIVE_RESCUE{height:36px;width:36px;background-position:0 -360px;}
+.ACCEPTED{height:36px;width:36px;background-position:0 -396px;}
+.DRIVING_TO_INCIDENT_LOCATION,.SETOFFED{height:36px;width:36px;background-position:0 -432px;}
+.GOTO_DESTINATION{height:36px;width:36px;background-position:0 -468px;}
+.FREE{height:24px;width:36px;background-position:0 -504px;}
+.FINISH_UNLOADING{height:36px;width:36px;background-position:0 -528px;}
+
+.carStatusString{vertical-align: top;margin-left:5px;}
+
+
+
+/* felxText */
+.flex-text-wrap {
+    position: relative;
+
+    *zoom: 1;
+}
+
+textarea,
+.flex-text-wrap {
+    outline: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+
+    *padding-bottom: 0 !important;
+}
+
+.flex-text-wrap textarea,
+.flex-text-wrap pre {
+    white-space: pre-wrap;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    *white-space: pre;
+    *word-wrap: break-word;
+}
+
+.flex-text-wrap textarea {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    resize: none;
+
+    /* IE7 box-sizing fudge factor */
+    *height: 94%;
+    *width: 94%;
+}
+
+.flex-text-wrap pre {
+    display: block;
+    visibility: hidden;
+}
+
+textarea,
+.flex-text-wrap pre {
+    /*
+     * Add custom styling here
+     * Ensure that typography, padding, border-width (and optionally min-height) are identical across textarea & pre
+     */
+}
+.callRecord{
+    border-width: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position:left 6px;
+    background-size: contain;
+    width: 17px;
+    padding:0;
+    height: 100%
+}
+.buttons .pofang,.buttons .zant{
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+}
+.buttons .img{
+    margin:7px 5px 0 5px !important;
+
+}
+.pofang{
+    background:transparent url(../../src/assets/Group.png) no-repeat;
+    background-size: contain;
+}
+.zant{
+    background:transparent url(../../src/assets/zant.png) no-repeat;
+    background-size: contain;
+}
+.outgoing_ANSWERED{
+    background-image: url(../../src/assets/power_on.png);
+}
+.outgoing_NOANSWER{
+    background-image:  url(../../src/assets/not_connected_to_power.png);
+}
+.incoming_ANSWERED{
+    background-image:  url(../../src/assets/call_through.png);
+}
+.incoming_NOANSWER{
+     background-image:  url(../../src/assets/call_not_connected.png);
+}
